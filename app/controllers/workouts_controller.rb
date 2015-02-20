@@ -3,5 +3,13 @@ class WorkoutsController < ApplicationController
 	end
 
 	def create 
+		@workout = Workout.new(params[:workout])
+
+		@workout.save
+		redirect_to @workout
+	end
+
+	def show
+		@workout = Workout.find(params[:id])
 	end
 end

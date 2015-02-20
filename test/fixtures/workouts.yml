@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  airsquat_sets: MyString
+  airsquat_reps: MyString
+  pushup_sets: MyString
+  pushup_reps: MyString
+  situp_sets: MyString
+  situp_reps: MyString
+  valdez_sets: MyString
+  valdez_reps: MyString
+  pike_sets: MyString
+  pike_reps: MyString
+  lunge_sets: MyString
+  lunge_reps: MyString
+  bearcrawl_sets: MyString
+  bearcrawl_reps: MyString
+
+two:
+  airsquat_sets: MyString
+  airsquat_reps: MyString
+  pushup_sets: MyString
+  pushup_reps: MyString
+  situp_sets: MyString
+  situp_reps: MyString
+  valdez_sets: MyString
+  valdez_reps: MyString
+  pike_sets: MyString
+  pike_reps: MyString
+  lunge_sets: MyString
+  lunge_reps: MyString
+  bearcrawl_sets: MyString
+  bearcrawl_reps: MyString
