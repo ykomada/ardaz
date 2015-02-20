@@ -1,0 +1,48 @@
+<h1> New Workout</h1>
+		<%= form_for :workouts, url: workouts_path do |w| %>
+	<p> Air Squat <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :airsquat_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :airsquat_reps %><br>
+	</p>
+	<p> Pushup <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :pushup_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :pushup_reps %><br>
+	</p>
+	<p> Situp <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :situp_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :situp_reps %><br>
+	</p>
+	<p> Valdez <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :valdez_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :valdez_reps %><br>
+	</p>
+	<p> Pike <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :pike_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :pike_reps %><br>
+	</p>
+	<p> Lunge <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :lunge_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :lunge_reps %><br>
+	</p>
+	<p> Bear Crawl <br>
+		<%= w.label :Sets %>
+		<%= w.text_field :bearcrawl_sets %><br>
+		<%= w.label :Reps %>
+		<%= w.text_field :bearcrawl_reps %><br>
+	</p>
+	<p>
+	<%= w.submit %>
+</p>
+<% end %>
