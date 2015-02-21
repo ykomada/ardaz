@@ -11,6 +11,7 @@
 	<th colspan="2">Pike Pushups</th>
 	<th colspan="2">Lunges</th>
 	<th colspan="2">Bear Crawl</th>
+	<th colspan="4"></th>
 </tr>
 <tr>
 	<th></th>
@@ -48,6 +49,9 @@
 	<td><%= workout.lunge_reps %></td>
 	<td><%= workout.bearcrawl_sets %></td>
 	<td><%= workout.bearcrawl_reps %></td>
+	<td><%= link_to 'Delete', workouts_path(workout), 
+					method: :delete,
+					data: { confirm: 'Are you sure?'} %></td>
 </tr>
 <% end %>
 <%= link_to 'New Workout', new_workout_path %>
