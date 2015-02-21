@@ -1,0 +1,53 @@
+<h1> Past Workouts </h1>
+<% # Prett shitty UI, need to fix %>
+<table>
+<tr>
+	<th>Date</th>
+	<% # I need to mess with the DB & Workouts model to get date data %>
+	<th colspan="2">Air Squats</th>
+	<th colspan="2">Pushups </th>
+	<th colspan="2">Situps</th> 
+	<th colspan="2">Valdez Lifts</th>
+	<th colspan="2">Pike Pushups</th>
+	<th colspan="2">Lunges</th>
+	<th colspan="2">Bear Crawl</th>
+</tr>
+<tr>
+	<th></th>
+	<th>Sets</th>
+	<th>Reps</th>
+	<th>Sets</th>
+	<th>Reps</th>
+	<th>Sets</th>
+	<th>Reps</th>
+	<th>Sets</th>
+	<th>Reps</th>
+	<th>Sets</th>
+	<th>Reps</th>
+	<th>Sets</th>
+	<th>Reps</th>
+	<th>Sets</th>
+	<th>Reps</th>
+</tr>
+
+<% @workouts.each do |workout| %>
+<tr>
+	<td><%= workout.id %></td>
+	<% #Filling in column with ID instead of Date for now %>
+	<td><%= workout.airsquat_sets %></td>
+	<td><%= workout.airsquat_reps %></td>
+	<td><%= workout.pushup_sets %></td>
+	<td><%= workout.pushup_reps %></td>
+	<td><%= workout.situp_sets %></td>
+	<td><%= workout.situp_reps %></td>
+	<td><%= workout.valdez_sets %></td>
+	<td><%= workout.valdez_reps %></td>
+	<td><%= workout.pike_sets %></td>
+	<td><%= workout.pike_reps %></td>
+	<td><%= workout.lunge_sets %></td>
+	<td><%= workout.lunge_reps %></td>
+	<td><%= workout.bearcrawl_sets %></td>
+	<td><%= workout.bearcrawl_reps %></td>
+</tr>
+<% end %>
+<%= link_to 'New Workout', new_workout_path %>
