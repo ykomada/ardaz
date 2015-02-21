@@ -49,7 +49,7 @@
 	<td><%= workout.lunge_reps %></td>
 	<td><%= workout.bearcrawl_sets %></td>
 	<td><%= workout.bearcrawl_reps %></td>
-	<td><%= link_to 'Delete', workouts_path(workout), 
+	<td><%= link_to 'Destroy', workout_path(workout), 
 					method: :delete,
 					data: { confirm: 'Are you sure?'} %></td>
 </tr>
