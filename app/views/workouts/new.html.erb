@@ -1,5 +1,22 @@
-<div class="center hero-unit">
-<h1> New Workout</h1>
+
+<body>
+	<div class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"> New Workout </a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">New</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+<div class="container">
 		<%= form_for :workout, url: workouts_path do |w| %>
 	<p> Air Squat <br>
 		<%= w.label :Sets %>

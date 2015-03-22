@@ -1,58 +1,56 @@
-<div class="center hero-unit">
-<h1> Past Workouts </h1>
-<% # Prett shitty UI, need to fix %>
-<table>
+<body>
+	<div class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"> Past Workouts </a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">New</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+
+<div class="container">
+<table class="table table-striped">
+	<thead>
 <tr>
 	<th>Date</th>
 	<% # I need to mess with the DB & Workouts model to get date data %>
-	<th colspan="2">Air Squats</th>
-	<th colspan="2">Pushups </th>
-	<th colspan="2">Situps</th> 
-	<th colspan="2">Valdez Lifts</th>
-	<th colspan="2">Pike Pushups</th>
-	<th colspan="2">Lunges</th>
-	<th colspan="2">Bear Crawl</th>
-	<th colspan="4"></th>
-</tr>
-<tr>
+	<th>Air Squats</th>
+	<th>Pushups </th>
+	<th>Situps</th> 
+	<th>Valdez Lifts</th>
+	<th>Pike Pushups</th>
+	<th>Lunges</th>
+	<th>Bear Crawl</th>
 	<th></th>
-	<th>Sets</th>
-	<th>Reps</th>
-	<th>Sets</th>
-	<th>Reps</th>
-	<th>Sets</th>
-	<th>Reps</th>
-	<th>Sets</th>
-	<th>Reps</th>
-	<th>Sets</th>
-	<th>Reps</th>
-	<th>Sets</th>
-	<th>Reps</th>
-	<th>Sets</th>
-	<th>Reps</th>
 </tr>
-
+	</thead>
+<tbody>
 <% @workouts.each do |workout| %>
 <tr>
 	<td><%= workout.id %></td>
-	<% #Filling in column with ID instead of Date for now %>
-	<td><%= workout.airsquat_sets %></td>
-	<td><%= workout.airsquat_reps %></td>
-	<td><%= workout.pushup_sets %></td>
-	<td><%= workout.pushup_reps %></td>
-	<td><%= workout.situp_sets %></td>
-	<td><%= workout.situp_reps %></td>
-	<td><%= workout.valdez_sets %></td>
-	<td><%= workout.valdez_reps %></td>
-	<td><%= workout.pike_sets %></td>
-	<td><%= workout.pike_reps %></td>
-	<td><%= workout.lunge_sets %></td>
-	<td><%= workout.lunge_reps %></td>
-	<td><%= workout.bearcrawl_sets %></td>
-	<td><%= workout.bearcrawl_reps %></td>
-	<td><%= link_to 'Destroy', workout_path(workout), 
+	<% #Filling in column with ID for now %>
+	<td align="center"><%= workout.airsquat_sets %> / <%= workout.airsquat_reps %></td>
+	<td align="center"><%= workout.pushup_sets %> / <%= workout.pushup_reps %></td>
+	<td align="center"><%= workout.situp_sets %> / <%= workout.situp_reps %></td>
+	<td align="center"><%= workout.valdez_sets %> / <%= workout.valdez_reps %></td>
+	<td align="center"><%= workout.pike_sets %> / <%= workout.pike_reps %></td>
+	<td align="center"><%= workout.lunge_sets %> / <%= workout.lunge_reps %></td>
+	<td align="center"><%= workout.bearcrawl_sets %> / <%= workout.bearcrawl_reps %></td>
+	<td align="center"><%= link_to 'Destroy', workout_path(workout), 
 					method: :delete,
 					data: { confirm: 'Are you sure?'} %></td>
 </tr>
+</tbody>
 <% end %>
+</table>
+</div>
+<br>
 <%= link_to 'New Workout', new_workout_path %>
