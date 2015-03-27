@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150327032410) do
+ActiveRecord::Schema.define(:version => 20150327040308) do
 
   create_table "workouts", :force => true do |t|
     t.string   "airsquat_sets"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20150327032410) do
     t.string   "situp_reps"
     t.string   "valdez_sets"
     t.string   "valdez_reps"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
     t.string   "bench_sets"
     t.string   "bench_reps"
     t.string   "backrow_sets"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(:version => 20150327032410) do
     t.string   "squat_reps"
     t.string   "bicep_sets"
     t.string   "bicep_reps"
+    t.string   "lowerback_sets"
+    t.string   "lowerback_reps"
   end
 
 end
