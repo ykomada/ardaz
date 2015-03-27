@@ -26,9 +26,10 @@
 	<th>Pushups </th>
 	<th>Situps</th> 
 	<th>Valdez Lifts</th>
-	<th>Pike Pushups</th>
-	<th>Lunges</th>
-	<th>Bear Crawl</th>
+	<th>Bench Press</th>
+	<th>Back Row</th>
+	<th>Squats</th>
+	<th>Biceps</th>
 	<th></th>
 </tr>
 	</thead>
@@ -41,9 +42,10 @@
 	<td align="center"><%= workout.pushup_sets %> / <%= workout.pushup_reps %></td>
 	<td align="center"><%= workout.situp_sets %> / <%= workout.situp_reps %></td>
 	<td align="center"><%= workout.valdez_sets %> / <%= workout.valdez_reps %></td>
-	<td align="center"><%= workout.pike_sets %> / <%= workout.pike_reps %></td>
-	<td align="center"><%= workout.lunge_sets %> / <%= workout.lunge_reps %></td>
-	<td align="center"><%= workout.bearcrawl_sets %> / <%= workout.bearcrawl_reps %></td>
+	<td align="center"><%= workout.bench_sets %> / <%= workout.bench_reps %></td>
+	<td align="center"><%= workout.backrow_sets %> / <%= workout.backrow_reps %></td>
+	<td align="center"><%= workout.squat_sets %> / <%= workout.squat_reps %></td>
+	<td align="center"><%= workout.bicep_sets %> / <%= workout.bicep_reps %></td>
 	<td align="center"><%= link_to 'Destroy', workout_path(workout), 
 					method: :delete,
 					data: { confirm: 'Are you sure?'} %></td>
